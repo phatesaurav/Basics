@@ -1,0 +1,18 @@
+package com.javatechie.crud.example.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+//as we added 'lombok' no need to add getter, setter manually
+//we can directly add 'lombok' provided annotation
+@Data //Generates @Getter @Setter @RequiredArgsConstructor @ToString @EqualsAndHashCode
+@AllArgsConstructor //An all-args constructor requires one argument for every field in the class.
+@NoArgsConstructor	//Generates a no-args constructor.
+public class Product {
+	
+	private int id;
+	private String name;
+	private int quantity;
+	private double price;
+}

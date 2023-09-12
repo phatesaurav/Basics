@@ -1,0 +1,5 @@
+package com.javatechie.crud.example.repository;
+
+public interface ProductRepository {
+
+}

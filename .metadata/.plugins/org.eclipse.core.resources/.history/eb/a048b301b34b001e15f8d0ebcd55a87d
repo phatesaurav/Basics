@@ -1,0 +1,28 @@
+package com.javatechie.crud.example.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.javatechie.crud.example.entity.Product;
+import com.javatechie.crud.example.repository.ProductRepository;
+
+@Service
+public class ProductService {
+
+	// This 'ProductService' will talk to the 'ProductRepository'
+	// So we need to inject this repository in the service
+	// We will create object of it
+	@Autowired // We can inject using @Autowired annotation
+	private ProductRepository repository;
+
+	// We will write all the http method i.e. get, post, put and delete
+
+	// We will write post method where we can save 'Product' object to the database
+	// This method will take argument as 'Product' object and it will save it
+	public Product saveProduct(Product product) { // Give 'Product' object as argument
+		return repository.save(product); // This is the in-built method given by JPA Repository
+	}
+
+	// If you want list of products to save at the same time then
+
+}

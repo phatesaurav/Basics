@@ -1,0 +1,4 @@
+npm install reactstrap
+npm install bootstrap
+npm install react-toastify
+npm install axios
