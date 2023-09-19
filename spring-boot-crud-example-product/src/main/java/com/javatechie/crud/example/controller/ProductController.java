@@ -3,6 +3,9 @@ package com.javatechie.crud.example.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,17 +15,18 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.javatechie.crud.example.entity.Product;
-import com.javatechie.crud.example.service.ProductService;
+import com.javatechie.crud.example.service.ProductServiceImpl;
 
 // This controller will talk to the service class
 // For that we need to inject service in controller class
 // @RestController is the combination of @Controller and @ResponseBody
 // @ResponseBody used for serialization (Java object to JSON object)
 @RestController
+@CrossOrigin(origins = "http://localhost:3000") // Cross-Origin Resource Sharing (CORS) issue
 public class ProductController {
 
 	@Autowired // Inject 'ProductService' in 'ProductController' using @Autowirted annotation
-	private ProductService service;
+	private ProductServiceImpl service;
 
 	// We will return the 'Product' object
 	// We will pass method argument as 'Product' object
@@ -31,9 +35,17 @@ public class ProductController {
 	// So that input JSON can be passed to 'Product' object
 	// This is post method so add annotation @PostMapping and give URL
 	// @RequestBody used for deserialization (JSON object to Java object)
+	// Convert data coming in JSON format into Java object
 	@PostMapping("/addProduct")
 	public Product addProduct(@RequestBody Product product) {
 		return service.saveProduct(product); // We can directly call 'service'
+	}
+
+	// ResponseEntity is the return type
+	@PostMapping("/addProduct2")
+	public ResponseEntity<?> addProduct2(@RequestBody Product product) {
+		return new ResponseEntity<>(service.saveProduct(product), HttpStatus.CREATED); // Create a ResponseEntity with a
+																						// body and status code.
 	}
 
 	// Similarly We have one more method to save list of 'Product' object
@@ -50,6 +62,11 @@ public class ProductController {
 		return service.getProducts(); // We can directly return from 'service'
 	}
 
+	@GetMapping("/getAllProducts2")
+	public ResponseEntity<?> findAllProducts2() {
+		return new ResponseEntity<>(service.getProducts(), HttpStatus.OK);
+	}
+
 	// This is get API for that we need to annotate @GetMapping
 	// We need to pass method argument as part of request URL
 	// For that use @PathVariable, we can also use @RequestParam annotation
@@ -60,6 +77,11 @@ public class ProductController {
 	@GetMapping("/getProductById/{id}")
 	public Product findProductById(@PathVariable int id) {
 		return service.getProductById(id);
+	}
+
+	@GetMapping("/getProductById2/{id}")
+	public ResponseEntity<?> findProductById2(@PathVariable int id) {
+		return new ResponseEntity<>(service.getProductById(id), HttpStatus.OK);
 	}
 
 	// @GetMapping("/getProductById")
@@ -80,8 +102,18 @@ public class ProductController {
 		return service.updateProduct(product); // We can directly call 'service'
 	}
 
+	@PutMapping("/updateProduct2")
+	public ResponseEntity<?> updateProduct2(@RequestBody Product product) {
+		return new ResponseEntity<>(service.updateProduct(product), HttpStatus.OK);
+	}
+
 	@DeleteMapping("/deleteProduct/{id}")
 	public String deleteProduct(@PathVariable int id) {
 		return service.deleteProduct(id);
+	}
+
+	@DeleteMapping("/deleteProduct2/{id}")
+	public ResponseEntity<?> deleteProduct2(@PathVariable int id) {
+		return new ResponseEntity<>(service.deleteProduct(id), HttpStatus.OK);
 	}
 }

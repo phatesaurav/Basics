@@ -14,6 +14,7 @@ function ViewCourses() {
   // We will create a function to load data from server using axios
   // We will use same trick to call that function when component is mounted on webpage
   // This will call our service inside 'useEffect'
+  // If [] in the end not given then program runs in infinite loop
   useEffect(function () {
     document.title = "View Courses";
     viewAllCoursesFromServer();
@@ -43,7 +44,7 @@ function ViewCourses() {
   // 'useState' is a hook, It enable the state
   // Because state by default we use in class component
   // But using 'useState' we can create variable for 'CourseList'
-  // We will give array to 'useState([])'F
+  // We will give array to 'useState([])'
   // Given array will be set to 'courses' variable
   // 'setCourses' function will be used to update 'courses' array
   // When we pass new value to the array, we must call 'setCourses' function to update 'courses' array
