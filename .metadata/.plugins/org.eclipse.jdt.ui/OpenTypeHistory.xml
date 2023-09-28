@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
     <typeInfo handle="=spring-boot-crud-example-course/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.springrest.service{CourseService.java[CourseService" modifiers="513" timestamp="1694261150313"/>
+    <typeInfo handle="=spring-boot-crud-example-blog/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blog.service{UserService.java[UserService" modifiers="513" timestamp="1695187246367"/>
+    <typeInfo handle="=spring-boot-blogify/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blogify.service{CategoryService.java[CategoryService" modifiers="513" timestamp="1695209410244"/>
+    <typeInfo handle="=spring-boot-blogify/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blogify.service{PostService.java[PostService" modifiers="513" timestamp="1695279370023"/>
+    <typeInfo handle="=spring-boot-crud-example-blog/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blog.service{CategoryService.java[CategoryService" modifiers="513" timestamp="1695287869201"/>
+    <typeInfo handle="=spring-boot-crud-example-blog/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blog.service{PostService.java[PostService" modifiers="513" timestamp="1695291055289"/>
 </typeInfoHistroy>
