@@ -24,5 +24,8 @@ public class FindMissingNumberInArray_1 {
 			}
 		}
 	}
-
 }
+
+// logic
+// maintain boolean array to save status of all visited elements as true
+// traverse through loop if status is false that is missing element
