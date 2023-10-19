@@ -4,7 +4,7 @@ public class Print1ToNWithoutLoop_14 {
 
 	public static void main(String[] args) {
 		Print1ToNWithoutLoop_14 refVar = new Print1ToNWithoutLoop_14();
-		refVar.printNos(10);
+		refVar.printNos(25);
 
 	}
 
