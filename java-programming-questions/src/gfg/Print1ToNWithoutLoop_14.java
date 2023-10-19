@@ -3,8 +3,8 @@ package gfg;
 public class Print1ToNWithoutLoop_14 {
 
 	public static void main(String[] args) {
-		Print1ToNWithoutLoop_14 print1ToNWithoutLoop_14 = new Print1ToNWithoutLoop_14();
-		print1ToNWithoutLoop_14.printNos(10);
+		Print1ToNWithoutLoop_14 refVar = new Print1ToNWithoutLoop_14();
+		refVar.printNos(10);
 
 	}
 
