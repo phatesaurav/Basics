@@ -8,6 +8,6 @@
 </head>
 <body>
 	<h3>This is about page.</h3>
-    <h2>This is Jenkins Testing.</h2>
+    <h2>This is Jenkins Test.</h2>
 </body>
 </html>
