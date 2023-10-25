@@ -7,8 +7,7 @@ public class ShowStringReverse_7 {
 	}
 
 	private static String reverseString(String string) {
-		StringBuilder stringBuilder = new StringBuilder(string);
-		return stringBuilder.reverse().toString();
+		return new StringBuilder(string).reverse().toString();
 	}
 
 }
