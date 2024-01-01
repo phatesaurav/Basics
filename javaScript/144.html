@@ -1,0 +1,43 @@
+<!--
+Objects can also have methods.
+Methods are actions that can be performed on objects.
+Methods are stored in properties as function definitions.
+this.firstName means the firstName property of this
+this.firstName means the firstName property of person.
+In JavaScript, the this keyword refers to an object.
+this is not a variable. It is a keyword. You cannot change the value of this.
+In a function definition, this refers to the "owner" of the function.
+In the example, this is the person object that "owns" the fullName function.
+In other words, this.firstName means the firstName property of this object.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Objects</h2>
+    <p>An object method is a function definition, stored as a property value.</p>
+    <p id="demo"></p>
+
+    <script>
+        // Create an object:
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        // Display data from the object:
+        document.getElementById("demo").innerHTML = person.fullName();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!--
+Normally, JavaScript strings are primitive values, created from literals:
+But strings can also be defined as objects with the keyword new:
+Do not create Strings objects.
+The new keyword complicates the code and slows down execution speed.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Strings</h1>
+    <p id="demo"></p>
+
+    <script>
+        // x is a string
+        let x = "John";
+        // y is an object
+        let y = new String("John");
+        document.getElementById("demo").innerHTML =
+            typeof x + "<br>" +     // string
+            typeof y;               // object
+    </script>
+</body>
+
+</html>

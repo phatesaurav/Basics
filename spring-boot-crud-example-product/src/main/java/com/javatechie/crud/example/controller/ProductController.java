@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.javatechie.crud.example.entity.Product;
@@ -22,6 +23,7 @@ import com.javatechie.crud.example.service.ProductServiceImpl;
 // @RestController is the combination of @Controller and @ResponseBody
 // @ResponseBody used for serialization (Java object to JSON object)
 @RestController
+@RequestMapping("/product") // to map requests to controllers methods
 @CrossOrigin(origins = "http://localhost:3000") // Cross-Origin Resource Sharing (CORS) issue
 public class ProductController {
 

@@ -34,6 +34,5 @@ public class RetrieveLinkedListElementsExample_13 {
 			System.out.println(item);
 		}
 		
-		
 	}
 }

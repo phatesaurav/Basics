@@ -1,7 +1,6 @@
 package com.javaguides.collections;
 
 public class NeedOfCollection_1 {
-
 	public static void main(String[] args) {
 		int a = 10;
 		int b = 20;
@@ -30,10 +29,8 @@ public class NeedOfCollection_1 {
 		objects[1] = new Student();
 		objects[2] = new Book();
 
-		// 3. ready made APIs support for data structure  is not available in array
-
+		// 3. ready made APIs support for data structure is not available in array
 	}
-
 }
 
 class Book {

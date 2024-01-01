@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.blog.entity.Category"/>
     <fullyQualifiedTypeName name="com.blog.repository.CategoryRepository"/>
     <fullyQualifiedTypeName name="com.blog.repository.UserRepository"/>
     <fullyQualifiedTypeName name="com.blog.exception.ResourceNotFoundException"/>
@@ -46,7 +45,6 @@
     <fullyQualifiedTypeName name="com.jwt.service.CustomUserDetailsService"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
     <fullyQualifiedTypeName name="com.javaguides.multithreading.JavaThread"/>
     <fullyQualifiedTypeName name="com.javaguides.multithreading.JavaRunnable"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 </qualifiedTypeNameHistroy>

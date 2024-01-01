@@ -1,0 +1,29 @@
+<!--
+ECMAScript 2019 added the string method trimEnd() to JavaScript.
+The trimEnd() method works like trim(), but removes whitespace only from the end of a string.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The trimEnd() Method</h2>
+    <p id="demo"></p>
+
+    <script>
+        let text1 = "     Hello World!     ";
+        let text2 = text1.trimEnd();
+        document.getElementById("demo").innerHTML =
+            "Length text1 = " + text1.length +      // 22
+            "<br>Length text2 = " + text2.length;   // 17
+    </script>
+</body>
+
+</html>

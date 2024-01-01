@@ -1,0 +1,30 @@
+<!--
+All string methods return a new string. They don't modify the original string.
+Formally said: Strings are immutable: Strings cannot be changed, only replaced.
+The trim() method removes whitespace from both sides of a string:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The trim() Method</h2>
+    <p id="demo"></p>
+
+    <script>
+        let text1 = "     Hello World!     ";
+        let text2 = text1.trim();
+        document.getElementById("demo").innerHTML =
+            "Length text1 = " + text1.length +      // 22
+            "<br>Length text2 = " + text2.length;   // 12
+    </script>
+</body>
+
+</html>

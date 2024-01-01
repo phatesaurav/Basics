@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class ValueEqualToIndex_6 {
 
 	public static void main(String[] args) {
-
 		int Arr[] = { 15, 2, 45, 12, 7 };
 		ArrayList<Integer> resultArrayList = valueEqualToIndex(Arr, 5);
 		for (Integer listItem : resultArrayList) {

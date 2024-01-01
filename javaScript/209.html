@@ -1,0 +1,30 @@
+<!--
+Perform a global, case-insensitive search for "ain": 
+If a regular expression does not include the g modifier (global search), match() will return only the first match in the string.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The match() Method</h2>
+    <p>Perform a global, case-insensitive search for "ain":</p>
+    <p id="demo"></p>
+
+    <script>
+        let text = "The rain in SPAIN stays mainly in the plain";
+        const myArr = text.match(/ain/gi);
+        document.getElementById("demo").innerHTML = 
+            myArr.length + "<br>" + // 4
+            myArr;                  // ain,AIN,ain,ain
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Assignments</h1>
+    <h2>Left Shift Assignment</h2>
+    <h3>The <<= Operator</h3>
+    <p id="demo"></p>
+
+    <script>
+        let x = -100;   // (1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1001 1100)
+        x <<= 5;    // (1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 0011 1000 0000)
+        document.getElementById("demo").innerHTML = "Value of x is: " + x;  // -3200
+    </script>
+</body>
+
+</html>

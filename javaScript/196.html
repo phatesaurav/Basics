@@ -1,0 +1,29 @@
+<!--
+Property access might be a little unpredictable:
+It makes strings look like arrays (but they are not)
+If no character is found, [ ] returns undefined, while charAt() returns an empty string.
+It is read only. str[0] = "A" gives no error (but does not work!)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Strings</h1>
+    <p>Property acces on strings are read only:</p>
+    <p id="demo"></p>
+
+    <script>
+        let text = "HELLO WORLD";
+        text[0] = "A";  // Does not work
+        document.getElementById("demo").innerHTML = text;   // HELLO WORLD
+    </script>
+</body>
+
+</html>

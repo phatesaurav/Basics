@@ -1,0 +1,32 @@
+<!--
+ECMAScript 2017 added two new string methods to JavaScript: 
+padStart() and padEnd() to support padding at the beginning and at the end of a string.
+The padStart() method pads a string from the start.
+It pads a string with another string (multiple times) until it reaches a given length.
+Pad a string with "0" until it reaches the length 4:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The padStart() Method</h2>
+    <p>The padStart() method pads a string from the start.</p>
+    <p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+    <p id="demo"></p>
+
+    <script>
+        let text = "5";
+        text = text.padStart(4, "0");
+        document.getElementById("demo").innerHTML = text;   // 0005
+    </script>
+</body>
+
+</html>

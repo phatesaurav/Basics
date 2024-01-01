@@ -1,0 +1,31 @@
+<!--
+If the separator is omitted, the returned array will contain the whole string in index [0].
+If the separator is "", the returned array will be an array of single characters:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript String Methods</h1>
+    <h2>The split().Method</h2>
+    <p id="demo"></p>
+
+    <script>
+        let text = "Hello";
+        const myArr = text.split("");
+        text = "";
+        for (let i = 0; i < myArr.length; i++) {
+            text += myArr[i] + "<br>"
+        }
+        document.getElementById("demo").innerHTML = text;   // H e l l o
+    </script>
+</body>
+
+</html>

@@ -13,8 +13,7 @@ public class PalindromicArray_1 {
 			String numberAsString = Integer.toString(a[i]);
 			StringBuilder reverseWord = new StringBuilder(numberAsString).reverse();
 
-			if (!numberAsString.equals(reverseWord.toString())) {
-				return false; // Return false as soon as a non-palindrome element is found
+			if (!numberAsString.equals(reverseWord.toString())) { // equals() method compares two strings based on content equality				return false; // Return false as soon as a non-palindrome element is found
 			}
 		}
 		return true; // Return true if all elements are palindromes

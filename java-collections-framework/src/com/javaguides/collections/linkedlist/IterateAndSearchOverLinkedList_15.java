@@ -1,19 +1,13 @@
 package com.javaguides.collections.linkedlist;
-
 import java.util.Iterator;
 import java.util.LinkedList;
-
 public class IterateAndSearchOverLinkedList_15 {
-
 	public static void main(String[] args) {
 		LinkedList<String> languages = new LinkedList<>();
 		languages.add("C"); // 0
 		languages.add("C++"); // 1
 		languages.add("Core Java"); // 2
 		languages.add("Core Java"); // 3
-		languages.add("Java EE"); // 4
-		languages.add("Spring Framework"); // 5
-
 		System.out.println("result => " + languages.contains("C")); // true
 
 		// Find the index of the first occurrence of an element in the LinkedList
@@ -27,7 +21,6 @@ public class IterateAndSearchOverLinkedList_15 {
 		// basic loop with iterator
 		// java 8 forEach + lambda example
 		// java 8 stream + lambda example
-
 		for (int i = 0; i < languages.size(); i++) {
 			System.out.println(languages.get(i)); // C C++ Core Java Core Java Java EE Spring Framework
 		}
@@ -46,10 +39,8 @@ public class IterateAndSearchOverLinkedList_15 {
 			String item = (String) iterator.next();
 			System.out.println(item);
 		}
-
+		
 		languages.forEach(item -> System.out.println(item)); // C C++ Core Java Core Java Java EE Spring Framework
-
 		languages.stream().forEach(item -> System.out.println(item)); // C C++ Core Java Core Java Java EE Spring Framework
-
 	}
 }

@@ -1,17 +1,15 @@
 package com.javaguides.collections.iterators;
-
+//simple for loop
+//advanced for loop
+//loop with iterator
+//iterator with while loop
+//java 8 stream + lambda example
+//java 8 forEach + lambda example
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-// simple for loop
-// advanced for loop
-// loop with iterator
-// iterator with while loop
-// java 8 stream + lambda example
-// java 8 forEach + lambda example
 public class DifferentWaysToIterateOverList_8 {
-
 	public static void main(String[] args) {
 		List<String> courses = Arrays.asList("C", "C++", "Java", "Spring", "Hibernate");
 
@@ -44,5 +42,4 @@ public class DifferentWaysToIterateOverList_8 {
 		// java 8 forEach + lambda example
 		courses.forEach(item -> System.out.println(item)); // C C++ Java Spring Hibernate
 	}
-
 }

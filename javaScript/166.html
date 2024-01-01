@@ -1,0 +1,37 @@
+<!--
+Extracting String Parts
+There are 3 methods for extracting a part of a string:
+slice(start, end)
+substring(start, end)
+substr(start, length)
+JavaScript String slice()
+slice() extracts a part of a string and returns the extracted part in a new string.
+The method takes 2 parameters: start position, and end position (end not included).
+JavaScript counts positions from zero.
+First position is 0.
+Second position is 1.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The slice() Method</h2>
+    <p>The sliced (extracted) part of the string is:</p>
+    <p id="demo"></p>
+
+    <script>
+        let text = "Apple, Banana, Kiwi";
+        let part = text.slice(7, 13);
+        document.getElementById("demo").innerHTML = part;   // Banana
+    </script>
+</body>
+
+</html>

@@ -5,8 +5,8 @@ public class FindIndex_3 {
 	public static void main(String[] args) {
 		int array[] = { 1, 2, 3, 4, 5, 5 };
 		int result[] = findIndex(array, 6, 5);
-		for (int i : result) {
-			System.out.println(i);
+		for (int item : result) {
+			System.out.println(item);
 		}
 	}
 

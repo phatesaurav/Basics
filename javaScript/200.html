@@ -1,0 +1,29 @@
+<!--
+JavaScript counts positions from zero.
+0 is the first position in a string, 1 is the second, 2 is the third, ...
+The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The lastIndexOf() Method</h2>
+    <p>The position of the last occurrence of "locate" is:</p>
+    <p id="demo"></p>
+
+    <script>
+        let text = "Please locate where 'locate' occurs!";
+        let index = text.lastIndexOf("locate");
+        document.getElementById("demo").innerHTML = index;  // 21
+    </script>
+</body>
+
+</html>
